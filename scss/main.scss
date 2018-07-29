@@ -8,6 +8,10 @@
 
 //FONTS: Header : Maven Pro, Body: Lato
 
+body {
+    font-family: 'Lato', Halvetica, Arial, sans-serif;
+}
+
 .container {
     width: 980px;
     margin: 0 auto;
@@ -16,7 +20,7 @@
 //--------------------------------GRID GENARATE
 .grid-container {
     width: 100%;
-    max-width: 1024px;
+    max-width: 980px;
     margin: 0 auto;
 
     .row {
@@ -66,15 +70,15 @@ header {
                     }
                 }
             }
-            .nav_left{
+            .nav_left {
                 justify-content: flex-end;
-                li:last-child{
+                li:last-child {
                     padding-left: 23px;
                 }
             }
-            .nav_right{
+            .nav_right {
                 justify-content: flex-start;
-                li:first-child{
+                li:first-child {
                     padding-right: 23px;
                 }
             }
@@ -103,8 +107,104 @@ header {
     }
 }
 
+section.pictures {
+    height: 720px;
+    padding-top: 90px;
+    //.pic_content{
+    //    display:flex;
+    //    justify-content: space-around;
+    //}
 
+    .row1 {
+        //.pic_content.left {
+        //    display: flex;
+        //    justify-content: flex-end;
+        //    padding-right: 10px;
+        //    .picture_2_row_1{
+        //        margin-left: 20px;
+        //    }
+        //}
+        //.pic_content.right {
+        //    display: flex;
+        //    justify-content: flex-start;
+        //    padding-left: 10px;
+        //    .picture_3_row_1{
+        //        margin-right: 20px;
+        //    }
+        //}
+        .pic_content {
+            display: flex;
+            justify-content: space-around;
+        }
+    }
 
+    .row2 {
+        .pic_content_r_2 {
+            margin-top: -38px;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    .row3 {
+        .pic_content_r_3 {
+            margin-top: -38px;
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+
+}
+
+section.about_me {
+    width: 100%;
+    height: 340px;
+    background-color: #2EB297;
+
+    .row {
+        padding-top: 68px;
+
+        .face_pic {
+            margin-right: -30px;
+        }
+
+        .text_content {
+            height: 206px;
+            font-weight: 300;
+            margin-left: -30px;
+            position: relative;
+            //display: flex;
+            //flex-direction: column;
+
+            .name {
+                color: #fff;
+                font-size: 25px;
+                //line-height: 60px;
+                padding-bottom: 2px;
+            }
+            .title {
+                color: #20806D;
+                font-size: 18px;
+                padding-bottom: 10px;
+            }
+            article {
+                color: #fff;
+                font-size: 12px;
+            }
+            .social_media{
+                width: 144px;
+                position: absolute;
+                display: flex;
+                //align-self: flex-end;
+                //justify-self: flex-end;
+                top:100%;
+                left: 100%;
+                transform: translate(-100%, -100%);
+            }
+
+        }
+    }
+}
 
 //.triangle {
 //    //margin-top: 20px;
