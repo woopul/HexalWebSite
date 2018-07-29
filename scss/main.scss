@@ -142,6 +142,13 @@ section.pictures {
             justify-content: space-around;
         }
     }
+    img {
+       opacity: 0.95;
+        &:hover{
+            transform: scale(1.05);
+            opacity: 1.0;
+        }
+    }
 
 }
 
@@ -195,10 +202,7 @@ section.about_me {
                 img:hover{
                     transform: scale(1.2);
                     -webkit-filter: brightness(120%);
-
                 }
-
-
             }
         }
     }
@@ -247,7 +251,7 @@ section.contact {
             height: 150px;
         }
 
-        a.btn {
+        .btn {
             text-decoration: none;
             color: white;
 
@@ -260,9 +264,15 @@ section.contact {
             float: right;
             margin-top: 15px;
             &:hover {
-                background: #30D9BE;
+                //background: #30D9BE;
+                background: #31BFA3;
                 //transform: scale(1.1);
                 cursor: default;
+            }
+            &:active{
+                //box-shadow: 0px 0px 0px 1px #a8a8a8;
+                background-color: #299176;
+                transform: scale(1.01);
             }
         }
     }
@@ -320,6 +330,19 @@ section.contact {
 
         }
     }
+
+}
+
+footer{
+    width: 100%;
+    height: 41px;
+    background-color: #222222;
+    color: #3D3D3D;
+    font-size: 14px;
+    p{
+        line-height: 41px;
+    }
+
 
 }
 
