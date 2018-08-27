@@ -92,7 +92,13 @@ header {
                 display: flex;
                 justify-content: center;
                 align-items: flex-end;
+
+                animation: logoAnim 1s 0s infinite linear alternate;
             }
+        }
+
+        @keyframes logoAnim {
+            from{} to {transform: rotateY(90deg)}
         }
 
         // Header section downsite triangle
